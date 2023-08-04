@@ -1,5 +1,6 @@
 Problem Management Metrics Automation Main Script:
-This script helps automate the generation of Problem Management metrics using data pulled from ServiceNow, an IT service management (ITSM) solution. It utilizes two Python libraries, pandas and openpyxl, for data manipulation and interaction with Excel files. The script includes several functions, which are described below:
+
+This script helps automate the generation of Problem Management metrics using data pulled from ServiceNow. It utilizes two Python libraries, pandas and openpyxl, for data manipulation and interaction with Excel files. The script includes several functions, which are described below:
 
 sheet_created_closed(file_path, dest_sheet, column_name): This function is responsible for generating 'Created' and 'Closed' Problem Records. It reads data from a ServiceNow export (Excel file), filters records according to the state ('Created' or 'Closed'), and appends the data to a specific sheet in a destination Excel file. The function also applies various formatting, such as adjusting row heights, column widths, and cell alignments.
 
@@ -15,6 +16,7 @@ By automating the generation of these Problem Management metrics, this script sa
 ##############################################################################################################################################################################################################################
 
 Data Consistency Check Script for Problem Management Metrics:
+
 This script is designed to ensure the consistency and correctness of data across multiple sheets within a single Excel workbook. The workbook in this script, titled 'WeeklyPMMetrics_20230428.xlsx', contains various sheets with data related to Problem Management Metrics.
 
 The script uses the openpyxl Python library to load and interact with Excel data. The seven sheets in the workbook are loaded as individual objects at the start of the script.
@@ -34,6 +36,7 @@ This script is instrumental in ensuring the accuracy and consistency of data in 
 ##############################################################################################################################################################################################################################
 
 Weekly ITSM Problem Management Metric Report Email Generator:
+
 This Python script automates the creation of an email describing the weekly ITSM problem management metrics, extracted from an Excel file. The program follows these steps:
 
 Excel File Loading: The script uses the openpyxl library to load a pre-existing Excel workbook named 'WeeklyPMMetrics_20230428.xlsx'. It extracts data from two worksheets within the workbook, namely 'Metrics - Weekly' and 'Weekly Trend - Overall'.
@@ -46,4 +49,4 @@ Week-to-Week Comparisons: Two helper functions compare_to_last_week and compare_
 
 Email Content Generation: The script then compiles all these metrics and comparisons into a string formatted as the content for an email to leadership. This content provides a week-to-week update on the status, trend, and detailed breakdown of ITSM problem management metrics.
 
-Run the script using a Python interpreter. It will load the data from the specified Excel file and print the formatted email content string to the console. Be sure to update the Excel file name and paths to the cell references if they change.
+Run the script using a Python interpreter. It will load the data from the specified Excel file and print the formatted email content string to the console.
