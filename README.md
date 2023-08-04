@@ -1,4 +1,4 @@
-Problem Management Metrics Automation Main Script:
+ITSM Metrics Main Script:
 
 This script helps automate the generation of Problem Management metrics using data pulled from ServiceNow. It utilizes two Python libraries, pandas and openpyxl, for data manipulation and interaction with Excel files. The script includes several functions, which are described below:
 
@@ -18,7 +18,7 @@ By automating the generation of these Problem Management metrics, this script sa
 
 ##############################################################################################################################################################################################################################
 
-Data Consistency Check Script for Problem Management Metrics:
+ITSM Metrics Check Script:
 
 This script is designed to ensure the consistency and correctness of data across multiple sheets within a single Excel workbook. The workbook in this script, titled 'WeeklyPMMetrics_20230428.xlsx', contains various sheets with data related to Problem Management Metrics.
 
@@ -38,7 +38,7 @@ This script is instrumental in ensuring the accuracy and consistency of data in 
 
 ##############################################################################################################################################################################################################################
 
-Weekly ITSM Problem Management Metric Report Email Generator:
+ITSM Metrics E-mail Script:
 
 This Python script automates the creation of an email describing the weekly ITSM problem management metrics, extracted from an Excel file. The program follows these steps:
 
